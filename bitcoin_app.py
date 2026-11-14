@@ -9,7 +9,7 @@ st.title("₿ Bitcoin Next-Day Price Predictor")
 st.write("This website take todays data to predict tommorows closing price.")
 
 # 1. Saved model load karo
-model = joblib.load("model2/bitcoin_model.pkl")#ab usska naam badal diya model bas hoga ab
+model = joblib.load("bitcoin_model.pkl")#ab usska naam badal diya model bas hoga ab
 
 # 2. Internet se khud live data download karo
 
