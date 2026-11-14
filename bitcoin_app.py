@@ -35,7 +35,7 @@ else:#agar empty hua ho toh fir live_df wala 10 days ka data hai usske last elem
     yesterday_date = live_df.index[-1].strftime('%Y-%m-%d')
     last_close = float(live_df['Close'].iloc[-1])
 # Screen par graph aur automatic input table dikhao
-st.subheader("📈 Pichle 10 Din ka Closing Price")
+st.subheader("📈 Past 10 days Closing Price")
 st.line_chart(live_df['Close'])
 
 st.subheader(f"📊 Automatic Input Data (Completed Candle: {yesterday_date})")
